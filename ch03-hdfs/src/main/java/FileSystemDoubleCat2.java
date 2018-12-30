@@ -16,7 +16,7 @@ public class FileSystemDoubleCat2 {
         try{
             in = fs.open(new Path(uri));
             IOUtils.copyBytes(in , System.out , 4096 , false);
-            in.seek(0);
+            in.seek(100);
             IOUtils.copyBytes(in , System.out , 4096 , false);
         }finally {
             IOUtils.closeStream(in);
